@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+
+
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*Mapper.xml
+  typeAliasesPackage: com.ryx.designpattern.mapper
+  global-config:
+    id-type: 0
+    field-strategy: 1
+    db-column-underline: true
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
+  logging:
+    level: info
